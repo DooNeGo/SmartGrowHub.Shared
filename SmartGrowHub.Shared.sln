@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGrowHub.Shared", "SmartGrowHub.Shared\SmartGrowHub.Shared.csproj", "{11D7E5C4-505A-43F2-B1BF-063BDD44803C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartGrowHub.Domain", "SmartGrowHub.Domain\SmartGrowHub.Domain\SmartGrowHub.Domain.csproj", "{20F21EE0-1643-46D1-9AFA-B4521FC10788}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{11D7E5C4-505A-43F2-B1BF-063BDD44803C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11D7E5C4-505A-43F2-B1BF-063BDD44803C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11D7E5C4-505A-43F2-B1BF-063BDD44803C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

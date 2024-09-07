@@ -1,0 +1,3 @@
+[submodule "SmartGrowHub.Domain"]
+	path = SmartGrowHub.Domain
+	url = https://github.com/DooNeGo/SmartGrowHub.Domain
