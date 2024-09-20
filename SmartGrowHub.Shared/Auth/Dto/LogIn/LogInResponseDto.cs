@@ -1,5 +1,5 @@
-﻿namespace SmartGrowHub.Shared.Auth.Dto.LogIn;
+﻿using SmartGrowHub.Shared.UserSessions.Dto;
 
-public sealed record LogInResponseDto(
-    Ulid UserId,
-    string JwtToken);
+namespace SmartGrowHub.Shared.Auth.Dto.LogIn;
+
+public sealed record LogInResponseDto(UserSessionDto UserSession);

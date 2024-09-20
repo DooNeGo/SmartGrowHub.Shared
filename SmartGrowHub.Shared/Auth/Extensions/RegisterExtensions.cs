@@ -1,5 +1,5 @@
-﻿using SmartGrowHub.Domain.Model;
-using SmartGrowHub.Domain.Requests;
+﻿using SmartGrowHub.Domain.Features.Register;
+using SmartGrowHub.Domain.Model;
 using SmartGrowHub.Shared.Auth.Dto.Register;
 
 namespace SmartGrowHub.Shared.Auth.Extensions;
