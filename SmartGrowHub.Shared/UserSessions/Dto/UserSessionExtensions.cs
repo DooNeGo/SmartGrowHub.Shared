@@ -19,4 +19,9 @@ public static class UserSessionExtensions
 
     public static RefreshTokensResponseDto ToDto(this RefreshTokensResponse response) =>
         new(response.AuthTokens.AccessToken, response.AuthTokens.RefreshToken);
+
+    public static Fin<RefreshTokensResponse> TryToDomain(this RefreshTokensResponseDto response) =>
+        from accessToken in AccessToken.Create(response.AccessToken)
+        from refreshToken in RefreshToken.Create(response.RefreshToken)
+        select new RefreshTokensResponse(new AuthTokens(accessToken, refreshToken));
 }
