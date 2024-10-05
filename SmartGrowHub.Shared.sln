@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartGrowHub.Shared", "SmartGrowHub.Shared\SmartGrowHub.Shared.csproj", "{11D7E5C4-505A-43F2-B1BF-063BDD44803C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartGrowHub.Shared", "SmartGrowHub.Shared\SmartGrowHub.Shared.csproj", "{11D7E5C4-505A-43F2-B1BF-063BDD44803C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartGrowHub.Domain", "SmartGrowHub.Domain\SmartGrowHub.Domain\SmartGrowHub.Domain.csproj", "{20F21EE0-1643-46D1-9AFA-B4521FC10788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartGrowHub.Domain", "..\SmartGrowHub.Core\SmartGrowHub.Domain\SmartGrowHub.Domain.csproj", "{A2351175-2A87-41CD-8610-1111F63B5383}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartGrowHub.Application", "..\SmartGrowHub.Core\SmartGrowHub.Application\SmartGrowHub.Application.csproj", "{2BB38B74-D8CC-4AD3-BF72-70FFEFDF57EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{11D7E5C4-505A-43F2-B1BF-063BDD44803C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11D7E5C4-505A-43F2-B1BF-063BDD44803C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11D7E5C4-505A-43F2-B1BF-063BDD44803C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20F21EE0-1643-46D1-9AFA-B4521FC10788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2351175-2A87-41CD-8610-1111F63B5383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2351175-2A87-41CD-8610-1111F63B5383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2351175-2A87-41CD-8610-1111F63B5383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2351175-2A87-41CD-8610-1111F63B5383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB38B74-D8CC-4AD3-BF72-70FFEFDF57EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB38B74-D8CC-4AD3-BF72-70FFEFDF57EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB38B74-D8CC-4AD3-BF72-70FFEFDF57EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB38B74-D8CC-4AD3-BF72-70FFEFDF57EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

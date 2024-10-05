@@ -13,6 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SmartGrowHub.Core\SmartGrowHub.Application\SmartGrowHub.Application.csproj" />
+    <ProjectReference Include="..\..\SmartGrowHub.Core\SmartGrowHub.Domain\SmartGrowHub.Domain.csproj" />
     <ProjectReference Include="..\SmartGrowHub.Domain\SmartGrowHub.Domain\SmartGrowHub.Domain.csproj" />
   </ItemGroup>
 

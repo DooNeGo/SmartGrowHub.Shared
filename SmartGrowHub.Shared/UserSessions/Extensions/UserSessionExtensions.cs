@@ -1,9 +1,10 @@
-﻿using SmartGrowHub.Domain.Common;
-using SmartGrowHub.Domain.Features.RefreshTokens;
+﻿using SmartGrowHub.Application.RefreshTokens;
+using SmartGrowHub.Domain.Common;
 using SmartGrowHub.Domain.Model;
+using SmartGrowHub.Shared.UserSessions.Dto;
 using SmartGrowHub.Shared.UserSessions.Dto.RefreshTokens;
 
-namespace SmartGrowHub.Shared.UserSessions.Dto;
+namespace SmartGrowHub.Shared.UserSessions.Extensions;
 
 public static class UserSessionExtensions
 {

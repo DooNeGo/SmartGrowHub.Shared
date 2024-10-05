@@ -1,3 +1,3 @@
-[submodule "SmartGrowHub.Domain"]
-	path = SmartGrowHub.Domain
-	url = https://github.com/DooNeGo/SmartGrowHub.Domain
+[submodule "SmartGrowHub.Core"]
+	path = SmartGrowHub.Core
+	url = https://github.com/DooNeGo/SmartGrowHub.Core.git

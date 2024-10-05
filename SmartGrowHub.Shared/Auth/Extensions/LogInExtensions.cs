@@ -1,8 +1,8 @@
-﻿using SmartGrowHub.Domain.Common;
-using SmartGrowHub.Domain.Features.LogIn;
+﻿using SmartGrowHub.Application.LogIn;
+using SmartGrowHub.Domain.Common;
 using SmartGrowHub.Shared.Auth.Dto.LogIn;
 using SmartGrowHub.Shared.Users.Extensions;
-using SmartGrowHub.Shared.UserSessions.Dto;
+using SmartGrowHub.Shared.UserSessions.Extensions;
 
 namespace SmartGrowHub.Shared.Auth.Extensions;
 

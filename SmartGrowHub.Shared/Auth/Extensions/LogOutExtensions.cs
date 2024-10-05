@@ -1,5 +1,5 @@
-﻿using SmartGrowHub.Domain.Common;
-using SmartGrowHub.Domain.Features.LogOut;
+﻿using SmartGrowHub.Application.LogOut;
+using SmartGrowHub.Domain.Common;
 using SmartGrowHub.Domain.Model;
 using SmartGrowHub.Shared.Auth.Dto.LogOut;
 

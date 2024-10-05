@@ -1,4 +1,4 @@
-﻿using SmartGrowHub.Domain.Features.Register;
+﻿using SmartGrowHub.Application.Register;
 using SmartGrowHub.Domain.Model;
 using SmartGrowHub.Shared.Auth.Dto.Register;
 
