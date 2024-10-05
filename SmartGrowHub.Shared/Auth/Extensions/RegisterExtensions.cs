@@ -7,7 +7,7 @@ namespace SmartGrowHub.Shared.Auth.Extensions;
 public static class RegisterExtensions
 {
     public static Fin<RegisterRequest> TryToDomain(this RegisterRequestDto request) =>
-        User.Create(
+        User.New(
             request.UserName ?? string.Empty,
             request.Password ?? string.Empty,
             request.Email ?? string.Empty,
