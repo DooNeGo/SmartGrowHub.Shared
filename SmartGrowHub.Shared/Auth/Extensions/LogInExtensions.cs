@@ -20,7 +20,7 @@ public static class LogInExtensions
     public static Fin<LogInRequestDto> TryToDto(this LogInRequest request) =>
         from password in request.Password.Match(
             plainText: FinSucc,
-            hashed: _ => Error.New("A password must be in plain text for the log in request"),
+            hash: _ => Error.New("A password must be in plain text for the log in request"),
             empty: () => Error.New("A password must be in plain text for the log in request"))
         select new LogInRequestDto(request.UserName, password);
 

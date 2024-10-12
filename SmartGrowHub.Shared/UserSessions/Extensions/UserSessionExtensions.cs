@@ -3,6 +3,7 @@ using SmartGrowHub.Domain.Common;
 using SmartGrowHub.Domain.Model;
 using SmartGrowHub.Shared.UserSessions.Dto;
 using SmartGrowHub.Shared.UserSessions.Dto.RefreshTokens;
+using System.Collections.Immutable;
 
 namespace SmartGrowHub.Shared.UserSessions.Extensions;
 
@@ -34,6 +35,9 @@ public static class UserSessionExtensions
         from refreshToken in RefreshToken.From((token.Value, token.Expires))
         select refreshToken;
 
+    public static Fin<ImmutableArray<UserSession>> TryToDomain(this UserSessionDto[] sessions) =>
+        sessions.SelectMany(session => session.TryToDomain()).ToImmutableArray();
+
     public static UserSessionDto ToDto(this UserSession session) =>
         new(session.Id.ToString(), session.UserId.ToString(), session.AuthTokens.ToDto());
 
@@ -48,4 +52,7 @@ public static class UserSessionExtensions
 
     public static RefreshTokenDto ToDto(this RefreshToken refreshToken) =>
         new(refreshToken, refreshToken.Expires);
+
+    public static UserSessionDto[] ToDto(this ImmutableArray<UserSession> sessions) =>
+        sessions.Select(session => session.ToDto()).ToArray();
 }

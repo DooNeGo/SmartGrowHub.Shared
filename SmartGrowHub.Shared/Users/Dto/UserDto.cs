@@ -1,7 +1,12 @@
-﻿namespace SmartGrowHub.Shared.Users.Dto;
+﻿using SmartGrowHub.Shared.UserSessions.Dto;
+using System.Text.Json.Serialization;
+
+namespace SmartGrowHub.Shared.Users.Dto;
 
 public sealed record UserDto(
-    Ulid Id,
-    string UserName,
-    string Email,
-    string DisplayName);
+    string? Id,
+    string? UserName,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] string? Password,
+    string? Email,
+    string? DisplayName,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] UserSessionDto[]? Sessions);
