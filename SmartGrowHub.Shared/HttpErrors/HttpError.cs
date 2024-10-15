@@ -1,4 +1,4 @@
-﻿namespace SmartGrowHub.Shared;
+﻿namespace SmartGrowHub.Shared.HttpErrors;
 
 public sealed record HttpError(
     string? Type,
