@@ -1,7 +1,6 @@
 ﻿using SmartGrowHub.Domain.Common;
 using SmartGrowHub.Domain.Model;
 using SmartGrowHub.Shared.Users.Dto;
-using SmartGrowHub.Shared.UserSessions.Extensions;
 
 namespace SmartGrowHub.Shared.Users.Extensions;
 
@@ -19,8 +18,7 @@ public static class UserExtensions
             user.UserName,
             password,
             user.Email,
-            user.DisplayName,
-            user.Sessions.ToDto());
+            user.DisplayName);
     }
 
     public static Fin<User> TryToDomain(this UserDto user) =>
@@ -31,6 +29,5 @@ public static class UserExtensions
             : Password.FromPlainText(user.Password)
         from email in EmailAddress.From(user.Email ?? string.Empty)
         from displayName in NonEmptyString.From(user.DisplayName ?? string.Empty)
-        from sessions in (user.Sessions ?? []).TryToDomain()
-        select new User(userId, userName, password, email, displayName, [], sessions);
+        select new User(userId, userName, password, email, displayName);
 }
