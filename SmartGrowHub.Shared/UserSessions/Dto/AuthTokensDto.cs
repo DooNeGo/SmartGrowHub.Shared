@@ -1,7 +1,8 @@
 ﻿using SmartGrowHub.Shared.UserSessions.Dto.RefreshTokens;
+using System.Text.Json.Serialization;
 
 namespace SmartGrowHub.Shared.UserSessions.Dto;
 
 public sealed record AuthTokensDto(
-    string AccessToken,
-    RefreshTokenDto RefreshToken);
+    [property: JsonRequired] string AccessToken,
+    [property: JsonRequired] RefreshTokenDto RefreshToken);

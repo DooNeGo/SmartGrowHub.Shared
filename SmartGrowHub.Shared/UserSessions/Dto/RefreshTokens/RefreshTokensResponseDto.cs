@@ -1,3 +1,6 @@
-﻿namespace SmartGrowHub.Shared.UserSessions.Dto.RefreshTokens;
+﻿using System.Text.Json.Serialization;
 
-public sealed record RefreshTokensResponseDto(AuthTokensDto AuthTokens);
+namespace SmartGrowHub.Shared.UserSessions.Dto.RefreshTokens;
+
+public sealed record RefreshTokensResponseDto(
+    [property: JsonRequired] AuthTokensDto AuthTokens);
