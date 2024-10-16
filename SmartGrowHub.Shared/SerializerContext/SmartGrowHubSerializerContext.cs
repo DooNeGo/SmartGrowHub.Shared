@@ -14,5 +14,6 @@ namespace SmartGrowHub.Shared.SerializerContext;
 [JsonSerializable(typeof(RefreshTokensRequestDto))]
 [JsonSerializable(typeof(RefreshTokensResponseDto))]
 [JsonSerializable(typeof(HttpError))]
+[JsonSerializable(typeof(ErrorDto))]
 public sealed partial class SmartGrowHubSerializerContext
     : JsonSerializerContext;
