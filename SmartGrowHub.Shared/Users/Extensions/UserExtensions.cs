@@ -1,4 +1,5 @@
 ﻿using SmartGrowHub.Domain.Common;
+using SmartGrowHub.Domain.Common.Password;
 using SmartGrowHub.Domain.Model;
 using SmartGrowHub.Shared.Users.Dto;
 

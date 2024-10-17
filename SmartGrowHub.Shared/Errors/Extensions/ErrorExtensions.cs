@@ -1,4 +1,4 @@
-﻿namespace SmartGrowHub.Shared.HttpErrors.Extensions;
+﻿namespace SmartGrowHub.Shared.Errors.Extensions;
 
 public static class ErrorExtensions
 {
