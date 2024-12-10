@@ -1,4 +1,4 @@
-﻿namespace SmartGrowHub.Shared.UserSessions.Dto.RefreshTokens;
+﻿namespace SmartGrowHub.Shared.UserSessions.RefreshTokens;
 
 public sealed record RefreshTokenDto(
     string Value,
