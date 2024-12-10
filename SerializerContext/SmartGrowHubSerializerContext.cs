@@ -1,8 +1,7 @@
 ﻿using System.Text.Json.Serialization;
-using SmartGrowHub.Shared.Auth.Login;
-using SmartGrowHub.Shared.Auth.Register;
+using SmartGrowHub.Shared.Auth;
+using SmartGrowHub.Shared.Tokens;
 using SmartGrowHub.Shared.Users;
-using SmartGrowHub.Shared.UserSessions.RefreshTokens;
 
 namespace SmartGrowHub.Shared.SerializerContext;
 

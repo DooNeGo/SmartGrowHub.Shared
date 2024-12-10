@@ -1,4 +1,4 @@
-﻿namespace SmartGrowHub.Shared.Auth.Register;
+﻿namespace SmartGrowHub.Shared.Auth;
 
 public sealed record RegisterRequestDto(
     string UserName,
