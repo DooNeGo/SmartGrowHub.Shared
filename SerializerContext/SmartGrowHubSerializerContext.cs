@@ -6,7 +6,7 @@ using SmartGrowHub.Shared.Users;
 namespace SmartGrowHub.Shared.SerializerContext;
 
 [JsonSerializable(typeof(UserDto))]
-[JsonSerializable(typeof(LoginRequestDto))]
+[JsonSerializable(typeof(LogInByEmailRequestDto))]
 [JsonSerializable(typeof(RegisterRequestDto))]
 [JsonSerializable(typeof(RefreshTokensRequestDto))]
 public sealed partial class SmartGrowHubSerializerContext : JsonSerializerContext;
