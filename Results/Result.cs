@@ -8,6 +8,10 @@ public record Result(
     public static Result Success() => new(true, null, null);
 
     public static Result Fail(string message, int code) => new(false, message, code);
+
+    public static Result<T> Success<T>(T data) => new(data, true, null, null);
+
+    public static Result<T> Failure<T>(string message, int code) => new(default, false, message, code);
 }
 
 public sealed record Result<T>(
