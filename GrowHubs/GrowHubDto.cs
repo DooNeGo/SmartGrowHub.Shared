@@ -1,5 +1,10 @@
+using SmartGrowHub.Shared.GrowHubs.Components;
+
 namespace SmartGrowHub.Shared.GrowHubs;
 
-public sealed record GrowHubDto(Ulid Id, string Name, PlantDto? Plant);
-
-public sealed record PlantDto(Ulid Id, string Name, DateTime PlantedAt);
+public sealed record GrowHubDto(
+    Ulid Id,
+    string Name,
+    string Model,
+    PlantDto? Plant,
+    IEnumerable<IGrowHubComponentDto> Components);
