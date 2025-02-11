@@ -2,4 +2,4 @@
 
 namespace SmartGrowHub.Shared.GrowHubs.Components;
 
-public sealed record HeaterComponentDto(Ulid Id, ISettingDto Setting) : IGrowHubComponentDto;
+public sealed record HeaterComponentDto(Ulid Id, SettingDto Setting);

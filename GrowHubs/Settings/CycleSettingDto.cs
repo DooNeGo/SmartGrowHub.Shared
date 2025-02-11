@@ -1,3 +1,9 @@
 ﻿namespace SmartGrowHub.Shared.GrowHubs.Settings;
 
-public sealed record CycleSettingDto(DateTime StartTime, TimeSpan OnDuration, int Value) : ISettingDto;
+public enum UnitDto
+{
+    Celsius,
+    Percent
+}
+
+public sealed record CycleSettingDto<TTime>(SettingValueDto Value, TimePeriodDto<TTime> Period) : SettingDto;

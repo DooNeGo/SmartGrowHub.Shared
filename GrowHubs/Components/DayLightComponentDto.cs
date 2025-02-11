@@ -2,4 +2,4 @@
 
 namespace SmartGrowHub.Shared.GrowHubs.Components;
 
-public sealed record FanComponentDto(Ulid Id, SettingDto Setting);
+public sealed record DayLightComponentDto(Ulid Id, SettingDto Setting);
