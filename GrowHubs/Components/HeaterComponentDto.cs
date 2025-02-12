@@ -1,5 +1,5 @@
-﻿using SmartGrowHub.Shared.GrowHubs.Settings;
+﻿using SmartGrowHub.Shared.GrowHubs.ComponentPrograms;
 
 namespace SmartGrowHub.Shared.GrowHubs.Components;
 
-public sealed record HeaterComponentDto(Ulid Id, SettingDto Setting);
+public sealed record HeaterComponentDto(Ulid Id, ComponentProgramDto Program);

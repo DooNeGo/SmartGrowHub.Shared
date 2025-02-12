@@ -1,3 +1,3 @@
-﻿namespace SmartGrowHub.Shared.GrowHubs.Settings;
+﻿namespace SmartGrowHub.Shared.GrowHubs;
 
 public readonly record struct WeekTimeOnlyDto(DayOfWeek DayOfWeek, TimeOnly Time);
