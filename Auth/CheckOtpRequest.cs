@@ -1,3 +1,3 @@
 namespace SmartGrowHub.Shared.Auth;
 
-public sealed record CheckOtpRequest(int OtpValue);
+public readonly record struct CheckOtpRequest(int OtpValue);

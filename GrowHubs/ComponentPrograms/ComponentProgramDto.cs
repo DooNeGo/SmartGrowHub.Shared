@@ -6,7 +6,7 @@ namespace SmartGrowHub.Shared.GrowHubs.ComponentPrograms;
 [JsonDerivedType(typeof(CycleProgramDto), "Cycle")]
 [JsonDerivedType(typeof(DailyProgramDto), "Daily")]
 [JsonDerivedType(typeof(WeeklyProgramDto), "Weekly")]
-public abstract record ComponentProgramDto
+public abstract record ComponentProgramDto(Ulid Id)
 {
     public T Match<T>(
         Func<ManualProgramDto, T> mapManual,
