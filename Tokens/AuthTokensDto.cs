@@ -1,5 +1,3 @@
 ﻿namespace SmartGrowHub.Shared.Tokens;
 
-public sealed record AuthTokensDto(
-    string AccessToken,
-    RefreshTokenDto RefreshToken);
+public sealed record AuthTokensDto(string AccessToken, string RefreshToken);
