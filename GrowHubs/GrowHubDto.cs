@@ -7,7 +7,4 @@ public sealed record GrowHubDto(
     string Name,
     string Model,
     PlantDto? Plant,
-    HeaterComponentDto HeaterComponent,
-    FanComponentDto FanComponent,
-    DayLightComponentDto DayLightComponent,
-    UvLightComponentDto UvLightComponent);
+    IEnumerable<GrowHubComponentDto> Components);
