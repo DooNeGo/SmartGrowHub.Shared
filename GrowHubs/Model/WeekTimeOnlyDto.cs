@@ -1,4 +1,4 @@
-﻿namespace SmartGrowHub.Shared.GrowHubs;
+﻿namespace SmartGrowHub.Shared.GrowHubs.Model;
 
 public readonly record struct WeekTimeOnlyDto(DayOfWeek DayOfWeek, TimeOnly Time) : IComparable<WeekTimeOnlyDto>
 {
