@@ -14,6 +14,7 @@ namespace SmartGrowHub.Shared.SerializerContext;
 [JsonSerializable(typeof(VerifyOtpRequest))]
 [JsonSerializable(typeof(UpdateScheduleRequestDto))]
 [JsonSerializable(typeof(Result))]
+[JsonSerializable(typeof(Result<AuthTokensDto>))]
 [JsonSerializable(typeof(Result<IEnumerable<AuthTokensDto>>))]
 [JsonSerializable(typeof(Result<IEnumerable<UserDto>>))]
 [JsonSerializable(typeof(Result<IEnumerable<GrowHubDto>>))]

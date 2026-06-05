@@ -1,6 +1,10 @@
-﻿namespace SmartGrowHub.Shared.GrowHubs.Model;
+﻿using System.Text.Json.Serialization;
 
-public readonly record struct WeekTimeOnlyDto(DayOfWeek DayOfWeek, TimeOnly Time) : IComparable<WeekTimeOnlyDto>
+namespace SmartGrowHub.Shared.GrowHubs.Model;
+
+public readonly record struct WeekTimeOnlyDto(
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DayOfWeek>))] DayOfWeek DayOfWeek,
+    TimeOnly Time) : IComparable<WeekTimeOnlyDto>
 {
     public int CompareTo(WeekTimeOnlyDto other)
     {
