@@ -15,7 +15,8 @@ namespace SmartGrowHub.Shared.SerializerContext;
 [JsonSerializable(typeof(UpdateScheduleRequestDto))]
 [JsonSerializable(typeof(Result))]
 [JsonSerializable(typeof(Result<AuthTokensDto>))]
-[JsonSerializable(typeof(Result<IEnumerable<AuthTokensDto>>))]
-[JsonSerializable(typeof(Result<IEnumerable<UserDto>>))]
-[JsonSerializable(typeof(Result<IEnumerable<GrowHubDto>>))]
+[JsonSerializable(typeof(Result<IReadOnlyList<AuthTokensDto>>))]
+[JsonSerializable(typeof(Result<IReadOnlyList<UserDto>>))]
+[JsonSerializable(typeof(Result<IReadOnlyList<GrowHubDto>>))]
+[JsonSerializable(typeof(Result<IReadOnlyList<SensorMeasurementDto>>))]
 public sealed partial class SmartGrowHubSerializerContext : JsonSerializerContext;
