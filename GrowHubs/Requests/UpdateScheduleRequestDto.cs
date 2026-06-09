@@ -2,7 +2,7 @@ using SmartGrowHub.Shared.GrowHubs.Model;
 
 namespace SmartGrowHub.Shared.GrowHubs.Requests;
 
-public sealed record SetScheduleRequestDto(
+public sealed record UpdateScheduleRequestDto(
     ScheduleTypeDto Type,
     IReadOnlyList<ScheduleUnitTemplateDto<TimeOnly>>? DailyEntries = null,
     IReadOnlyList<ScheduleUnitTemplateDto<WeekTimeOnlyDto>>? WeeklyEntries = null);
